@@ -8,6 +8,7 @@ blocks.onBlockPlaced(DIRT, function () {
     music.playSound(Sound.Explode)
 })
 player.onChat("Herobrine", function () {
+    blocks.place(NETHERRACK, pos(0, 0, 0))
     blocks.place(NETHERRACK, pos(0, 0, 1))
     blocks.place(FIRE, pos(0, 0, 2))
 })
